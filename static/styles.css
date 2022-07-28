@@ -34,11 +34,11 @@ left:100px;
 }
 .home{
 position:relative;
-left:100px;
+left:80px;
 }
 .upload{
 position:relative;
-left:150px;
+left:100px;
 }
 @media screen and (min-width:900px){
 .file{
