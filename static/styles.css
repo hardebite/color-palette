@@ -23,19 +23,8 @@ margin-left:20px;
 font-family: 'Montserrat', sans-serif;
 
 }
-.file{
-position:relative;
-left:320px;
-}
 
-.home{
-position:relative;
-left:150px;
-}
-.upload{
-position:relative;
-left:200px;
-}
+
 .text{
 font-family: 'Sacramento', cursive;
 font-size:5rem;
