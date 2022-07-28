@@ -7,7 +7,7 @@
 {% endblock %}
 {% block content %}
 <div>
-<h1>Welcome to Doyin's color pallet</h1>
+<h1>Welcome to Doyin's color palette</h1>
 <h3>This website is to show the hex codes used in an image </h3>
 <p>To use it, you click on the choose image button  pick the image you want and click the upload button to upload  and the hex codes with a pallet with be shown </p>
 </div>
@@ -16,7 +16,7 @@
 {% endfor %}
 
 </div>
-<form  enctype="multipart/form-data" method="POST">
+<form class="file" enctype="multipart/form-data" method="POST">
   <input type="file"  name="file">
   <input class="btn" type="submit" value="Upload">
 </form>

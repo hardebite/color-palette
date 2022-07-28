@@ -7,12 +7,12 @@
 {% endblock %}
 {% block content %}
 <div>
-<h3>the list of colors in the picture as hex codes</h3>
+<h3  class="text" >The list of colors in the picture as hexcode's</h3>
 </div>
     <div class="colors  col-lg-12 col-sm-12 col-md-12 ">{% for item in form %}
 <h4 style="background-color:{{ item}};">{{item}}</h4>
 {% endfor %}
 </div>
-<a href="{{ url_for('upload_file')}}"><button class="btn btn-primary btn-lg" >Home</button></a>
-<a href="{{ url_for('download_file', name = name)}}"><button class="btn btn-primary btn-lg" >Uploaded File</button></a>
+<a class="home"  href="{{ url_for('upload_file')}}"><button class="btn btn-primary btn-lg" >Home</button></a>
+<a class="upload"  href="{{ url_for('download_file', name = name)}}"><button class="btn btn-primary btn-lg" >Uploaded File</button></a>
 {% endblock %}
