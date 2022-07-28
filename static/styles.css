@@ -32,6 +32,14 @@ font-size:2rem;
 position:relative;
 left:100px;
 }
+.home{
+position:relative;
+left:100px;
+}
+.upload{
+position:relative;
+left:150px;
+}
 @media screen and (min-width:900px){
 .file{
 position:relative;
