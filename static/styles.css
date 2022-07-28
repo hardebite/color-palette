@@ -30,7 +30,7 @@ font-size:2rem;
 }
 .file{
 position:relative;
-left:200px;
+left:100px;
 }
 @media screen and (min-width:900px){
 .file{
