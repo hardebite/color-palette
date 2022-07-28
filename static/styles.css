@@ -24,8 +24,30 @@ font-family: 'Montserrat', sans-serif;
 
 }
 
-
 .text{
 font-family: 'Sacramento', cursive;
-font-size:5rem;
+font-size:2rem;
+}
+.file{
+position:relative;
+left:200px;
+}
+@media screen and (min-width:900px){
+.file{
+position:relative;
+left:400px;
+}
+
+.home{
+position:relative;
+left:450px;
+}
+.upload{
+position:relative;
+left:700px;
+}
+.code{
+position:relative;
+left:400px;
+}
 }
