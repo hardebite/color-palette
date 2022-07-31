@@ -1,8 +1,10 @@
+import time
+
 from resizeimage import resizeimage
 from PIL import Image
 import webcolors
 from colorthief import ColorThief
-from flask import Flask, render_template, redirect,url_for,request, flash,send_from_directory
+from flask import Flask, render_template ,redirect,url_for,request, flash,send_from_directory
 from werkzeug.utils import secure_filename
 from flask_bootstrap import Bootstrap
 
@@ -54,6 +56,14 @@ def colors():
         with Image.open(f) as image:
 
             # Resize
+            if image.width<800:
+                # print("yes")
+                # larger_image = resizeimage.resize("width", image, 800)
+                # print("done")
+                flash("image is too small")
+                return render_template("index.html",message= "Error: The image width is too small !!!")
+
+
             smaller_image = resizeimage.resize_width(image, 800)
             smaller_image.save(new_image_path, image.format)
 

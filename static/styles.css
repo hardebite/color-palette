@@ -41,21 +41,30 @@ position:relative;
 left:100px;
 }
 @media screen and (min-width:900px){
-.file{
+.code{
+width:600px;
 position:relative;
 left:400px;
 }
-
 .home{
 position:relative;
-left:450px;
+left:500px;
 }
 .upload{
 position:relative;
 left:700px;
 }
-.code{
+}
+@media screen and (max-width:900px){
+.file{
 position:relative;
 left:400px;
 }
+
+
+.upload{
+position:relative;
+left:200px;
+}
+
 }
