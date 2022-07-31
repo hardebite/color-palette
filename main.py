@@ -30,7 +30,6 @@ def upload_file():
             flash('No file part')
             return redirect(request.url)
         file = request.files['file']
-        # print(file)
         # If the user does not select a file, the browser submits an
         # empty file without a filename.
         if file.filename == '':
@@ -57,10 +56,6 @@ def colors():
 
             # Resize
             if image.width<800:
-                # print("yes")
-                # larger_image = resizeimage.resize("width", image, 800)
-                # print("done")
-                flash("image is too small")
                 return render_template("index.html",message= "Error: The image width is too small !!!")
 
 
